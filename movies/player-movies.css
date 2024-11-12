@@ -1,0 +1,214 @@
+ .u-section-1 {
+  background-image: linear-gradient(#090a0b, rgba(255,255,255,0));
+  min-height: 77px;
+}
+
+.u-section-1 .u-group-1 {
+  min-height: 78px;
+  margin: -1px auto;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 31px auto 0 55px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 44px;
+  height: 44px;
+  transition-duration: 0.25s;
+  margin: -28px auto 0 0;
+  padding: 10px;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 500;
+  margin: -38px 0 0 auto;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: solid;
+  padding: 3px 5px;
+}
+
+.u-section-1 .u-icon-2 {
+  vertical-align: 0px;
+}
+
+.u-section-1 .u-text-3 {
+  line-height: 1.4;
+  font-size: 0.75rem;
+  margin: -10px auto 0 55px;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  padding: 0 3px;
+}
+
+@media (max-width: 1399px) {
+  .u-section-1 .u-group-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 75px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 75px;
+    width: 1037px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 29px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    color: rgb(255, 255, 255) !important;
+    transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-top: -11px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 77px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 78px;
+    width: 817px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 35px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: -39px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 76px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: 0;
+    margin-bottom: -1px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 34px;
+    margin-left: 52px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-top: -27px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 52px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 77px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 86px;
+    width: auto;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 28px;
+    margin-left: 47px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: -38px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 47px;
+  }
+}
+
+.u-section-1 .u-icon-1,
+.u-section-1 .u-icon-1:before,
+.u-section-1 .u-icon-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-icon-1.u-icon-1.u-icon-1:hover {
+  transform: scale(1.05) translateX(0px) translateY(0px) !important;
+  background-color: rgba(54,52,64,0.6) !important;
+  stroke-width: 0px !important;
+}
+
+.u-section-1 .u-icon-1.u-icon-1.u-icon-1:hover .u-svg-link {
+  fill: var(--#ffffff) !important;
+}
+
+.u-section-1 .u-icon-1 {
+  stroke: transparent !important;
+  border-color: transparent !important;
+  stroke-width: 0 !important;
+}
+
+.u-section-1 .u-icon-1.u-icon-1.u-icon-1.hover {
+  transform: scale(1.05) translateX(0px) translateY(0px) !important;
+  background-color: rgba(54,52,64,0.6) !important;
+  stroke-width: 0px !important;
+}
+
+.u-section-1 .u-icon-1.u-icon-1.u-icon-1.hover .u-svg-link {
+  fill: var(--#ffffff) !important;
+}
+
+.u-section-1 .u-icon-1 {
+  stroke: transparent !important;
+  border-color: transparent !important;
+  stroke-width: 0 !important;
+}.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

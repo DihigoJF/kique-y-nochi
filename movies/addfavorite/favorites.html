@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorites</title>
+    <style>
+      body{
+        background-color: #0e0d14;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container div {
+        margin: 5px;
+      }
+      img{
+        width: 140px !important;
+        border-radius: "";
+      }
+
+      @media  (min-width: 768px) {
+        img {
+          width: 80px;
+        }
+      }
+    </style>
+</head>
+<body onload="myFunction()">
+
+    
+    <div class="container">
+      <div id="details-1"></div>
+      <div id="details-2"></div>
+      <div id="details-3"></div>
+      <div id="details-4"></div>
+      <div id="details-5"></div>
+      <div id="details-6"></div>
+      <div id="details-7"></div>
+      <div id="details-8"></div>
+      <div id="details-9"></div>
+      <div id="details-10"></div>
+    </div>
+    
+    
+    
+    <script>
+    function myFunction() {
+      document.getElementById("details-1").innerHTML = localStorage.getItem('juego-de-tronos'),
+      document.getElementById("details-2").innerHTML = localStorage.getItem('breaking-bad'),
+      document.getElementById("details-3").innerHTML = localStorage.getItem('aharen-san');
+      document.getElementById("details-4").innerHTML = localStorage.getItem('spy-family');
+      document.getElementById("details-5").innerHTML = localStorage.getItem('kakushigoto');
+      document.getElementById("details-6").innerHTML = localStorage.getItem('demos-slayer');
+      document.getElementById("details-7").innerHTML = localStorage.getItem('dr-stone');
+      document.getElementById("details-8").innerHTML = localStorage.getItem('fire-force');
+      document.getElementById("details-9").innerHTML = localStorage.getItem('mushoku-tensei');
+      document.getElementById("details-10").innerHTML = localStorage.getItem('tribe-nine');
+    }
+    </script>
+    
+</body>
+</html>

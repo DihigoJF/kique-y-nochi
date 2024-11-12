@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Temporada 1 </span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">Temporada 1 </li>
+            <li>Temporada 2 </li>
+            <li>Temporada 3 </li>
+            <li>Temporada 4 </li>
+            <li>Temporada 5 </li>
+            <li>Temporada 6 </li>
+            <li>Temporada 7 </li>
+            <li>Temporada 8 </li>
+            <li>Temporada 9 </li>
+            <li>Temporada 10 </li>
+        </ul>
+    </div>
+    <style>
+        body{
+            background: #0e0d14;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+        }
+        .dropdown {
+            width: 170px;
+            position: relative;
+            margin: 2em;
+        }
+        .dropdown * {
+            box-sizing: border-box;
+        }
+        .select {
+            background: #2a2f3b;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #2a2f3b;
+            border-radius: 0.5em;
+            padding: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .select-clicked {
+            border: 2px solid #4a44fe;
+            box-shadow: 0 0 0.8em #4a44fe;
+        }
+        .select:hover {
+            background: #151525;
+        }
+        .caret {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid #ffffff;
+            transition: 0.3s;
+        }
+        .caret-rotate {
+            transform: rotate(180deg);
+        }
+        .menu {
+            width: 170px;
+            list-style: none;
+            padding: 0.2em 0.5em;
+            background: #323741a2;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+            border-radius: 0.5em;
+            text-align: center;
+            color: #9fa5b5;
+            position: absolute;
+            top: 2.3em;
+            opacity: 0;
+            display: none;
+            transition: 0.2s;
+            z-index: 1;
+        }
+        .menu li {
+            padding: 6px;
+            margin: 6px 0;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
+        .menu li:hover {
+            background: #18181dda;
+        }
+        .active {
+            background: #0e0d14ce;
+        }
+        .menu-open {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        dropdowns.forEach(dropdown => {
+            const select = dropdown.querySelector('.select');
+            const caret = dropdown.querySelector('.caret');
+            const menu = dropdown.querySelector('.menu');
+            const options = dropdown.querySelectorAll('.menu li');
+            const selected = dropdown.querySelector('.selected');
+
+            select.addEventListener('click', () => {
+                select.classList.toggle('select-clicked');
+                caret.classList.toggle('caret-rotate');
+                menu.classList.toggle('menu-open');
+            });
+
+            options.forEach(option => {
+                option.addEventListener('click', () => {
+                    selected.innerText = option.innerText;
+                    select.classList.remove('select-clicked');
+                    caret.classList.remove('caret-rotate');
+                    menu.classList.remove('menu-open');
+                    options.forEach(option => {
+                        option.classList.remove('active');
+                    });
+                    option.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
