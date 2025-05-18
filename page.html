@@ -209,20 +209,12 @@
             </div>
         </div>
         <div class="notification-footer">
-            <button class="renew-button" id="renewButton">Renovar Plan</button>
+            <a href="https://www.netlify.com/pricing/" class="renew-button" id="renewButton">Renovar Plan</a>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const renewButton = document.getElementById('renewButton');
-            
-            renewButton.addEventListener('click', function() {
-                // Simulación de redirección a la página de renovación
-                alert('Redirigiendo a la página de renovación de plan...');
-                // En una implementación real, aquí iría:
-                // window.location.href = 'https://app.netlify.com/billing';
-            });
 
             // Animación sutil para el botón
             renewButton.addEventListener('mouseover', function() {
